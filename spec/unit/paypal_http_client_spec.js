@@ -66,7 +66,7 @@ describe('PayPalHttpClient', function () {
 
   describe('user agent', function () {
     it('returns properly formatted user agent', function () {
-      let version = require('../../package').version;
+      let version = require('../../package.json').version;
       expect(this.http.getUserAgent()).to.include('PayPalSDK/PayPal-node-SDK ' + version);
       expect(this.http.getUserAgent()).to.include('OpenSSL');
       expect(this.http.getUserAgent()).to.include('node');
