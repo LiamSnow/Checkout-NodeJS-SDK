@@ -17,7 +17,7 @@
     "node": ">=8"
   },
   "dependencies": {
-    "@paypal/paypalhttp": "LiamSnow/paypalhttp_node"
+    "@paypal/paypalhttp": "^1.0.1"
   },
   "devDependencies": {
     "btoa": "^1.2.1",
