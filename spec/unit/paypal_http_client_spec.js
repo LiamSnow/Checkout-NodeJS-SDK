@@ -1,6 +1,6 @@
 'use strict';
 
-import { version } from '../../package.json';
+const version = "1.0.3";
 const paypal = require('../../lib/lib').core;
 const nock = require('nock');
 
