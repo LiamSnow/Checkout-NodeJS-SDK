@@ -1,5 +1,6 @@
 'use strict';
 
+import { version } from '../../package.json';
 const paypal = require('../../lib/lib').core;
 const nock = require('nock');
 
@@ -66,7 +67,6 @@ describe('PayPalHttpClient', function () {
 
   describe('user agent', function () {
     it('returns properly formatted user agent', function () {
-      let version = require('../../package.json').version;
       expect(this.http.getUserAgent()).to.include('PayPalSDK/PayPal-node-SDK ' + version);
       expect(this.http.getUserAgent()).to.include('OpenSSL');
       expect(this.http.getUserAgent()).to.include('node');
